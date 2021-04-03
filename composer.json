@@ -1,0 +1,48 @@
+{
+    "name": "grizz-it/dbal",
+    "description": "Database abstraction layer",
+    "keywords": ["dbal"],
+    "type": "library",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require":
+    {
+        "php": "^8.0",
+        "grizz-it/enum": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Grizz-IT",
+            "homepage": "https://www.grizz-it.com/",
+            "role": "Developer"
+        }
+    ],
+    "config":
+    {
+        "sort-packages": true
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "GrizzIt\\Dbal\\": "src/"
+        }
+    },
+    "archive":
+    {
+        "exclude": [
+            "/tests",
+            "/.gitignore",
+            "/.travis.yml",
+            "/phpcs.xml",
+            "/PULL_REQUEST_TEMPLATE.md",
+            "/CODE_OF_CONDUCT.md",
+            "/CONTRIBUTING.md"
+        ]
+    },
+    "require-dev":
+    {
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}
